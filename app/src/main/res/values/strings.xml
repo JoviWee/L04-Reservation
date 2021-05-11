@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">L04-Reservation</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+    <string name="key_in_your_reservation_date">Key in your Reservation Date :</string>
+    <string name="non_smoking_area">Non - Smoking Area</string>
+    <string name="smoking_area">Smoking Area</string>
+    <string name="where_do_you_prefer_to_be_seated_at">Where do you prefer to be seated at :</string>
+    <string name="enter_your_phone_number">Enter Your Phone Number</string>
+    <string name="enter_your_name">Enter Your Name</string>
+</resources>

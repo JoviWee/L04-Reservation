@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_name"
+        android:textColor="#090505" />
+
+    <EditText
+        android:id="@+id/etInputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_phone_number"
+        android:textColor="#070404" />
+
+    <EditText
+        android:id="@+id/etInputPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/tvPax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number of Pax"
+        android:textColor="#0C0808" />
+
+    <EditText
+        android:id="@+id/etInputPax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSeatView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/where_do_you_prefer_to_be_seated_at"
+            android:textColor="#120404" />
+
+        <RadioGroup
+            android:id="@+id/rgButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/smoking_area" />
+
+            <RadioButton
+                android:id="@+id/radioBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/non_smoking_area" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvReservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/key_in_your_reservation_date"
+            android:textColor="#150C0C" />
+
+        <DatePicker
+            android:id="@+id/dP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Reservation Timing :"
+            android:textColor="#0B0808" />
+
+        <TimePicker
+            android:id="@+id/tP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:timeViewShown="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:text="@string/submit" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:text="@string/reset" />
+    </LinearLayout>
+</LinearLayout>
